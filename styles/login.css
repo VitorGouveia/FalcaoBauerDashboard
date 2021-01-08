@@ -1,0 +1,143 @@
+.login-container {
+    width: 85vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 4%;
+    margin: 4% 0;
+    border-radius: 12px;
+    background: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    animation: fadeIn .6s linear;
+}
+
+.login-container header {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container header p {
+    font-size: 22px;
+    color: var(--white);
+}
+
+.login-container form .back {
+    color: #707477;
+    align-self: start;
+    padding: 0 2%;
+    margin-bottom: -1%;
+    font-size: 18px;
+}
+
+.login-container form .back:hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.login-container header h1 {
+    font-size: 48px;
+    letter-spacing: 3px;
+    color: var(--orange);
+}
+
+.login-container form {
+    display: flex;
+    width: 50%;
+    max-width: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1% 0;
+}
+
+.login-container form .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 2% 0;
+    user-select: none;
+    font: 600 28px 'Work Sans', sans-serif;
+}
+
+.login-container form .row label {
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-container form .row label .hide {
+    display: none;
+}
+
+.login-container form .row label svg:hover {
+    cursor: pointer;
+    stroke: var(--orange);
+}
+
+.login-container form .row input {
+    padding: 6% 4%;
+    color: var(--orange);
+    background: var(--bg-input);
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+.login-container section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 400px;
+}
+
+.login-container section .google {
+    background: rgb(70, 70, 238);
+}
+
+.login-container section button {
+    width: 48%;
+    padding: 6% 2%;
+    margin: 1% 0;
+    border-radius: 12px;
+    font: 600 16px 'Work Sans', sans-serif;
+    background: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.login-container section button:hover,
+.login-container section button:hover span {
+    text-decoration: underline;
+    filter: brightness(120%); 
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        height: 95vh;
+    }
+
+    .login-container header h1 {
+        font-size: 32px;
+    }
+
+    .login-container header p,
+    .login-container form .row input {
+        font-size: 16px;
+    }
+
+    .login-container header,
+    .login-container section,
+    .login-container form {
+        width: 90%;
+    }
+
+    .login-container section button {
+        margin: 4% 0;
+    }
+}

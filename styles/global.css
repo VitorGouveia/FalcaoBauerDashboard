@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700;800&display=swap');
+
+/* reset css */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, button, textarea {
+    border: 0;
+    outline: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+    color: var(--white);
+    font-family: 'Work Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    background: var(--bg-input);
+    width: 0.25rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--orange)
+}
+
+/* Configuração dos temas */
+:root {
+    --bg-color: #34393E;
+    --box-shadow: 19px 19px 39px #2c3035, -19px -19px 39px #3c4247;
+    --bg-input: #3c4247;
+
+    --orange: #E05029; 
+    --white: #fff;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg)
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0)
+    }
+}
