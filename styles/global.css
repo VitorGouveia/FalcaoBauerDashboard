@@ -13,12 +13,15 @@ input, button, textarea {
     outline: 0;
 }
 
+html,
+body,
+#__next {
+    width: 100%;
+    height: 100%;
+}
+
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: var(--bg-color);
+    background: rgb(66, 80, 94);
     color: var(--white);
     font-family: 'Work Sans', sans-serif;
 }
@@ -34,22 +37,62 @@ body {
 
 /* Configuração dos temas */
 :root {
-    --bg-color: #34393E;
+    --bg-color: #2c363f;
     --box-shadow: 19px 19px 39px #2c3035, -19px -19px 39px #3c4247;
     --bg-input: #3c4247;
 
+    --google: rgb(70, 70, 238);
+    --discord: rgb(70, 70, 238);
+    --facebook: rgb(70, 70, 238);
+
     --orange: #E05029; 
     --white: #fff;
+}
+
+a {
+    text-align: none;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 600ms forwards;
+}
+
+button {
+    outline: 0;
+    border: 0;
+    font-weight: bold;
 }
 
 /* Animações */
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: rotateX(-10deg)
+        transform: translate(0, -10px)
     }
     to {
         opacity: 1;
-        transform: rotateX(0)
+        transform: translate(0)
     }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.input-wrapper {
+    border-radius: .5rem;
 }

@@ -9,7 +9,6 @@
     border-radius: 12px;
     background: var(--bg-color);
     box-shadow: var(--box-shadow);
-    animation: fadeIn .6s linear;
 }
 
 .login-container header {
@@ -62,82 +61,22 @@
     font: 600 28px 'Work Sans', sans-serif;
 }
 
-.login-container form .row label {
-    padding: 0 2%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.login-container form .row label .hide {
-    display: none;
-}
-
-.login-container form .row label svg:hover {
-    cursor: pointer;
-    stroke: var(--orange);
-}
-
-.login-container form .row input {
-    padding: 6% 4%;
-    color: var(--orange);
-    background: var(--bg-input);
-    border-radius: 12px;
-    font-size: 20px;
-}
-
 .login-container section {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     width: 50%;
     max-width: 400px;
 }
 
-.login-container section .google {
-    background: rgb(70, 70, 238);
+.login-container section div {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
 }
 
-.login-container section button {
-    width: 48%;
-    padding: 6% 2%;
-    margin: 1% 0;
-    border-radius: 12px;
-    font: 600 16px 'Work Sans', sans-serif;
-    background: var(--orange);
-    color: var(--white);
-    cursor: pointer;
-    transition: all .2s linear;
-}
-
-.login-container section button:hover,
-.login-container section button:hover span {
-    text-decoration: underline;
-    filter: brightness(120%); 
-}
-
-@media (max-width: 768px) {
-    .login-container {
-        height: 95vh;
-    }
-
-    .login-container header h1 {
-        font-size: 32px;
-    }
-
-    .login-container header p,
-    .login-container form .row input {
-        font-size: 16px;
-    }
-
-    .login-container header,
-    .login-container section,
-    .login-container form {
-        width: 90%;
-    }
-
-    .login-container section button {
-        margin: 4% 0;
-    }
+.login-container section .icons {
+    margin-bottom: 1rem;
 }

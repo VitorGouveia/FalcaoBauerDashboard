@@ -5,11 +5,9 @@
     justify-content: space-around;
     flex-direction: column;
     padding: 4%;
-    margin: 4% 0;
     border-radius: 12px;
     background: var(--bg-color);
     box-shadow: var(--box-shadow);
-    animation: fadeIn .6s linear;
 }
 
 .home-container header {
@@ -17,7 +15,7 @@
     text-align: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
 }
 
 .home-container header p {
@@ -54,7 +52,7 @@
 }
 
 .home-container section button.outlined {
-    border: 1px solid gray;
+    border: 1px solid var(--orange);
     background: var(--bg-color);
 }
 
@@ -63,9 +61,10 @@
 }
 
 .home-container section button:hover,
-.home-container section button:hover span {
-    text-decoration: underline;
-    filter: brightness(120%); 
+.home-container section button:focus,
+.home-container section button:hover span,
+.home-container section button:focus span {
+    filter: brightness(60%); 
 }
 
 @media (max-width: 768px) {

@@ -9,7 +9,6 @@
     border-radius: 12px;
     background: var(--bg-color);
     box-shadow: var(--box-shadow);
-    animation: fadeIn .6s linear;
 }
 
 .register-container header {
@@ -22,6 +21,8 @@
 
 .register-container header p {
     font-size: 22px;
+    width: 20ch;
+    align-self: start;
     color: var(--white);
 }
 
@@ -44,6 +45,7 @@
 
 .register-container header h1 {
     font-size: 48px;
+    margin-bottom: 5%;
     letter-spacing: 3px;
     color: var(--orange);
 }
@@ -57,100 +59,11 @@
     justify-content: center;
 }
 
-.register-container form .row {
-    display: flex;
-    flex-direction: column;
+.register-container form div {
     width: 100%;
-    margin: 1% 0;
-    user-select: none;
-    font: 600 28px 'Work Sans', sans-serif;
-}
-
-.register-container form .input-group {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-.register-container form .input-group .row {
-    width: 48%;
-}
-
-.register-container form .input-group .row input {
-    padding: 12% 8%;
-}
-
-.register-container form .row label {
-    padding: 0 2%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.register-container form .row label .hide {
-    display: none;
-}
-
-.register-container form .row label svg:hover {
-    cursor: pointer;
-    stroke: var(--orange);
-}
-
-.register-container form .row input {
-    padding: 6% 4%;
-    color: var(--orange);
-    background: var(--bg-input);
-    border-radius: 12px;
-    font-size: 20px;
 }
 
 .register-container form button {
     width: 100%;
-    padding: 6% 2%;
-    margin: 2% 0;
-    border-radius: 12px;
-    font: 600 16px 'Work Sans', sans-serif;
-    background: var(--orange);
-    color: var(--white);
-    cursor: pointer;
-    transition: all .2s linear;
-}
-
-.register-container form button.outlined {
-    border: 1px solid gray;
-    background: var(--bg-color);
-}
-
-.register-container form button.outlined:hover {
-    filter: brightness(120%); 
-    color: var(--orange);
-}
-
-@media (max-width: 768px) {
-    .register-container {
-        flex-direction: column;
-        height: 95vh;
-    }
-
-    .register-container header h1 {
-        font-size: 32px;
-    }
-
-    .register-container form .row label, input {
-        font-size: 20px;
-    }
-
-    .register-container header img {
-        margin: 10% 0;
-    }
-
-    .register-container header p,
-    .register-container form .row input {
-        font-size: 16px;
-    }
-
-    .register-container header,
-    .register-container form {
-        width: 90%;
-    }
+    margin-top: 1rem;
 }
