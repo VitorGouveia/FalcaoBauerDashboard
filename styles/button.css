@@ -1,0 +1,40 @@
+button {
+  border-radius: 0.5rem;
+  padding: 1rem 2.5rem;
+  background: var(--orange);
+  border: 2px solid transparent;
+  color: #dedede;
+  font-weight: bolder;
+  font-size: 1rem;
+  transition: all 200ms;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  transition: all 200ms;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(60%);
+}
+
+.cta {
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.cta svg {
+  margin-left: 0.6rem;
+}
+
+.outlined {
+  border-color: var(--orange);
+}
+
+@import url("./button/discord.css");
+@import url("./button/facebook.css");
+@import url("./button/google.css");

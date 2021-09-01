@@ -1,0 +1,21 @@
+[data-button="discord"] {
+  background-color: var(--discord);
+}
+
+[data-button="discord"].outlined {
+  background: transparent;
+  border-color: var(--discord)
+}
+
+[data-button="discord"].outlined svg {
+  fill:var(--discord);
+}
+
+[data-button="discord"].outlined:hover {
+  filter: brightness(100%);
+  background-color: var(--discord);
+}
+
+[data-button="discord"].outlined:hover svg {
+  fill:#fff;
+}
