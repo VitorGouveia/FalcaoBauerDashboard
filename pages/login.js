@@ -1,27 +1,15 @@
 import React from "react"
 import Link from "next/link"
-import { FiEye, FiEyeOff } from "react-icons/fi"
-import { FaGoogle } from "react-icons/fa"
-import HeadConfig from "./components/HeadConfig"
+import { FiLogIn } from "react-icons/fi"
+import { FaGoogle, FaFacebook, FaDiscord } from "react-icons/fa"
+import { Input } from "./components/Input"
+import { Button } from "./components/Button"
 
 const Login = () => {
     const Nome = "Vitor"
 
-    const showPassword = () => {
-        document.querySelector(".login-container form .row label .show").style.display = "none"
-        document.querySelector(".login-container form .row label .hide").style.display = "block"
-        document.querySelector(".login-container form .row .passwordInput").type = "text"
-    }
-
-    const hidePassword = () => {
-        document.querySelector(".login-container form .row label .show").style.display = "block"
-        document.querySelector(".login-container form .row label .hide").style.display = "none"
-        document.querySelector(".login-container form .row .passwordInput").type = "password"
-    }
-
     return (
         <div className="login-container">    
-            <HeadConfig title="Home" />
             <header>
                 <h1>Você voltou, {Nome}!</h1>
                 <p>Faça login na plataforma da etec jrm</p>
@@ -32,31 +20,32 @@ const Login = () => {
                     <p className="back">&larr; Voltar</p>
                 </Link>
                 <div className="row">
-                    <label>Usuário</label>
-                    <input required name="user" placeholder="Usuário"/>
-                </div>
-                <div className="row">
-                    <label>
-                        Senha
-                        <FiEye className="show"
-                            onClick={showPassword}
-                            size={26}
-                        />
-                        <FiEyeOff className="hide"
-                            onClick={hidePassword}
-                            size={26} 
-                        />
-                    </label>
-                    <input required className="passwordInput" type="password" name="password" placeholder="Senha" />
+                    <Input name="user" className="mb-0" placeholder="Usuário" type="text" />
+                    <Input name="password" className="mt-0 bt-0" placeholder="Senha" type="password" />
                 </div>
             </form>
 
             <section>
-                <Link href="/login">
-                    <button>Entre</button>
-                </Link>
+                <div className="icons">
+                    <Button data-button="google" className="outlined">
+                        <FaGoogle size={20} />
+                    </Button>
 
-                    <button className="google"><FaGoogle size={16} /></button>
+                    <Button data-button="discord" className="outlined">
+                        <FaDiscord size={20} />
+                    </Button>
+
+                    <Button data-button="facebook" className="outlined">
+                        <FaFacebook size={20} />
+                    </Button>
+                </div>
+
+                <Link href="/login">
+                    <Button className="outlined cta">
+                        Entre
+                        <FiLogIn size={20} strokeWidth={3} />
+                    </Button>
+                </Link>
             </section>
         </div>
     )

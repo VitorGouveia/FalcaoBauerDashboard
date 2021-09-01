@@ -1,8 +1,9 @@
 import React from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { FiEye, FiEyeOff } from "react-icons/fi"
-import HeadConfig from "./components/HeadConfig"
+// import {  } from "react-icons/fi"
+import { Input } from "./components/Input"
+import { Button } from "./components/Button"
 
 const Register = () => {
     const showPassword = () => {
@@ -19,7 +20,6 @@ const Register = () => {
 
     return (
         <div className="register-container">    
-            <HeadConfig title="Home" />
             <header>
                 <h1>Faça seu registro</h1>
                 <p>Crie sua conta e entre na plataforma da etec</p>
@@ -30,29 +30,12 @@ const Register = () => {
             </header>
 
             <form>
-                <div className="row input-group">
-                    <div className="row">
-                        <label>Nome</label>
-                        <input required name="nome" placeholder="Nome"/>
-                    </div>
-                    <div className="row">
-                        <label>Sobrenome</label>
-                        <input required name="sobrenome" placeholder="Sobrenome" />
-                    </div>
-                </div>
-                <div className="row">
-                    <label>E-mail</label>
-                    <input required name="email" placeholder="E-mail" type="email" />
-                </div>
-                <div className="row">
-                    <label>
-                        Senha
-                        <FiEye className="show" onClick={showPassword} size={26}/>
-                        <FiEyeOff className="hide" onClick={hidePassword} size={26}/>
-                    </label>
-                    <input required className="passwordInput" type="password" name="password" placeholder="Senha" />
-                </div>
-                <button className="outlined" type="submit">Crie sua conta</button>
+                <Input required type="text" name="name" placeholder="nome" className="mb-0" />
+                <Input required type="text" name="lastname" placeholder="sobrenome" className="rounded-0 bt-0" />
+                <Input required type="email" name="email" placeholder="email" className="rounded-0 bt-0" />
+                <Input required type="password" name="password" placeholder="senha" className="mt-0 bt-0" />
+                
+                <Button classNmae="cta">Crie sua conta</Button>
             </form>
         </div>
     )
