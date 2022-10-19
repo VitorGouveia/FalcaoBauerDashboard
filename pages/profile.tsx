@@ -46,7 +46,7 @@ export default function SimpleCard({
   useEffect(() => {
     setSession(sess)
     if(!sess) {
-        // router.push("/")
+        router.push("/")
     }
   }, [router, sess])
 
@@ -66,7 +66,6 @@ export default function SimpleCard({
         }
         const DEFAULT_AVATARS_BUCKET = "charts"
   
-        const user = await supabase.auth.getUser()
         const file = event.target.files[0]
         const fileExt = file.name.split('.').pop()
         const fileName = `${session?.user.id}${Math.random()}.${fileExt}`
@@ -78,15 +77,6 @@ export default function SimpleCard({
   
         if (uploadError) {
           throw uploadError
-        }
-  
-        let { error: updateError } = await supabase.from('profiles').upsert({
-          id: user.data.user?.id,
-          avatar_url: filePath,
-        })
-  
-        if (updateError) {
-          throw updateError
         }
         console.log("uploaded with success")
       } catch (error) {
