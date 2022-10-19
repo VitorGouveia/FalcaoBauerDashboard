@@ -6,6 +6,7 @@ import {
 import { Auth, ThemeSupa } from '@supabase/auth-ui-react'
 import { useSession, useSupabaseClient, Session } from '@supabase/auth-helpers-react'
 import { useCallback, useEffect, useState } from "react";
+import { DEFAULT_AVATARS_BUCKET } from "../util";
 
 export default function SimpleCard({
     uid,
@@ -64,7 +65,6 @@ export default function SimpleCard({
         if (!event.target.files || event.target.files.length == 0) {
           throw 'You must select an image to upload.'
         }
-        const DEFAULT_AVATARS_BUCKET = "charts"
   
         const file = event.target.files[0]
         const fileExt = file.name.split('.').pop()
