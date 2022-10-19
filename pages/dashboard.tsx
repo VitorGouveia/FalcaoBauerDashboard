@@ -36,7 +36,7 @@ export default function Dashboard() {
         }
 
         getFiles()
-    }, [supabase.storage])
+    }, [])
 
     return (
         <div>

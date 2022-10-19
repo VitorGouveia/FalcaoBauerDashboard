@@ -73,7 +73,7 @@ export default function SimpleCard({
   
         let { error: uploadError } = await supabase.storage
           .from(DEFAULT_AVATARS_BUCKET)
-          .upload(filePath, file)
+          .upload(`reuniao/${filePath}`, file)
   
         if (uploadError) {
           throw uploadError
