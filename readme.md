@@ -5,6 +5,7 @@
 Minhas empresas de código aberto
 - [RendaExtra](https://github.com/VitorGouveia/RendaExtra)
 - [TechWizard](https://github.com/VitorGouveia/TechWizard)
+- [Digicode](https://github.com/VitorGouveia/Digicode)
 
 ## Projetos
 - [Giffy](https://github.com/VitorGouveia/Giffy)
