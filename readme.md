@@ -1,4 +1,4 @@
-I'm a SaaS entrepreneur that creates life-changing solutions to daily problems.
+I am a _higly_ efficient programmer that creates life-changing SaaS products.
 
 ##### PRODUCTS
 
