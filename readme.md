@@ -26,7 +26,7 @@ I work as a full-stack dev at [Minu](https://minu.co) since june 2022, working w
 If you'd like to discuss any sort of opportunity, feel free to contact me over:
 
 [![Linkedin Badge](https://img.shields.io/badge/-Vitor%20Gouveia-EF4444?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/vitor-gouveia/)](https://www.linkedin.com/in/vitor-gouveia/) 
-[![Gmail Badge](https://img.shields.io/badge/-vitor.gouveia10@gmail.com-EF4444?style=flat-square&logo=Gmail&logoColor=white&link=mailto:diego.schell.f@gmail.com)](mailto:vitorneves.gouveia10@gmail.com)
+[![Gmail Badge](https://img.shields.io/badge/-vitor.gouveia10@gmail.com-EF4444?style=flat-square&logo=Gmail&logoColor=white&link=mailto:vitorneves.gouveia10@gmail.com)](mailto:vitorneves.gouveia10@gmail.com)
 
 #
 
