@@ -2,9 +2,9 @@
 
 I am a _highly_ efficient programmer that creates life-changing SaaS products.
 
-- [Advanced Typescript knowledge]()
-- [Creator of cinematic websites]()
-- [3+ years of experience]()
+- Advanced Typescript knowledge
+- Creator of cinematic, user-driven websites
+- 3+ years of experience
 
 #
 
@@ -14,6 +14,17 @@ I am a _highly_ efficient programmer that creates life-changing SaaS products.
 
 ##### WORKING ON
 - [⚡ **Flash**](https://vitorgouveia.github.io/flash), create websites in seconds.
+
+#
+
+#### Tech Stack
+
+<img height="40" width="150" alt="Typescript" src="https://img.shields.io/badge/typescript-000000?style=for-the-badge&logo=typescript&logoColor=3178c6">
+<img height="40" width="150" alt="Astro" src="https://img.shields.io/badge/astro-000000?style=for-the-badge&logo=astro&logoColor=white">
+<img height="40" width="150" alt="Reactjs" src="https://img.shields.io/badge/react.js-000000?style=for-the-badge&logo=react&logoColor=61DBFB">
+<img height="40" width="150" alt="Nextjs" src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white">
+          
+          
 
 #
 
