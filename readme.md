@@ -72,9 +72,10 @@ If you'd like to discuss any sort of opportunity, feel free to contact me over:
 
 #
 
-#### Certificates
+<details>
+  <summary><strong>Certificates</strong></summary>
 
-Left   | Right  
+  Left   | Right  
 :-------------------------:|:-------------------------:
 ![image](https://github.com/vitorgouveia/VitorGouveia/assets/61664367/195fe854-95bd-4e34-86a2-2492fc25d6b1)  |  ![image](https://github.com/vitorgouveia/VitorGouveia/assets/61664367/e78b261a-8737-4a22-9d9d-cf857d8829d3)
 ![curso_1_page-0001](https://github.com/vitorgouveia/VitorGouveia/assets/61664367/ad8cd7c9-17b3-4395-80d4-771e91f6104c) | ![curso_2_page-0001](https://github.com/vitorgouveia/VitorGouveia/assets/61664367/7c5ef719-6c1d-4da3-9f45-23354f448ac8)
@@ -82,7 +83,7 @@ Left   | Right
 ![curso_5_page-0001](https://github.com/vitorgouveia/VitorGouveia/assets/61664367/299cf9e2-20d4-4ace-becc-caffc5e2faf2) | ![curso_6_page-0001](https://github.com/vitorgouveia/VitorGouveia/assets/61664367/0f21fa4c-c711-41db-b6e3-49d74f9e827e)
 ![curso_7_page-0001](https://github.com/vitorgouveia/VitorGouveia/assets/61664367/71680104-ab64-4816-a65b-3fb3f56f95ec) | 
 
-
+</details>
 
 #
 
