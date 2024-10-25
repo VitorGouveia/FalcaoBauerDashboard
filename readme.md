@@ -3,16 +3,12 @@
 - Advanced Typescript knowledge
 - Creator of cinematic websites
 - 3+ years of experience
+- Domain-driven Development
 
 #
 
 #### PRODUCTS
-- 🖥️ PeçasPraPC, find the ideal computer in seconds.
-- 🪄 Mystical, the notion-based tool for documentation, blogs and pages.
-- 🐶 SeuPet, help pets find a new home.
-- 🔗 Linker, shortened links with super-powers.
-- 📱ShareQR, an app that allows for editing QR code links.
-- ⚡ Flash, generate stunning hand-crafted sites in seconds.
+- ⌛ Ascend, Non-blocking task management.
 
 #
 
